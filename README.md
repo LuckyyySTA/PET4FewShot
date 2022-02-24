@@ -41,6 +41,9 @@
 
 运行`sh predict.sh`脚本在指定数据集上进行预测
 
+## 更新进度
+- 2022/2/24 完成在tnews数据集上的训练、评估和预测
+
 ## References
 
 [1] Schick, Timo, and Hinrich Schütze. “Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference.” ArXiv:2001.07676 [Cs], January 25, 2021. http://arxiv.org/abs/2001.07676.
