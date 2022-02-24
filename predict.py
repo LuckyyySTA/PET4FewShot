@@ -36,7 +36,7 @@ def write_tnews(task_name, output_file, pred_labels):
     with open("../FewCLUE/datasets/" + args.task_name + '/train_few_all.json', 'r', encoding="utf-8") as f:
         for line in f.readlines():
             dic = json.loads(line)
-            test_data.append(dic)
+            train_few_all_data.append(dic)
 
     def label2id(train_few_all):
         label2id = {}
@@ -48,7 +48,6 @@ def write_tnews(task_name, output_file, pred_labels):
         return label2id
     
     label2id_dict = label2id(train_few_all_data)
-    print(label2id_dict)
     test_example = {}
     with open(output_file, 'w', encoding="utf-8") as f:
         for idx, example in enumerate(test_data):
