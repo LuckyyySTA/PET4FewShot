@@ -1,0 +1,12 @@
+python pet.py \
+	--task_name "tnews" \
+	--device gpu \
+    --pattern_id 0 \
+	--save_dir ./tnews \
+	--index 0 \
+	--batch_size 16 \
+	--learning_rate 1E-4 \
+	--epochs 10 \
+	--max_seq_length 512 \
+	--language_model "bert-base-chinese" \
+    --rdrop_coef 0 \
